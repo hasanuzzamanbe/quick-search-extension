@@ -1,0 +1,11 @@
+
+.popup-body{min-width: 237px;}
+.hz-logo img {display: inline;}
+.hz-descr {padding: 7px; border-top: 1px solid #00ff89; min-width: 222px; border-bottom: 1px solid #00ff89;
+	       width: 18%; margin-top: 5px; margin-bottom: 14px;
+	    }
+.hz-title {display: inline;  position: absolute;margin-top: 4px;  margin-left: 12px;}
+span.version {float: right;
+    margin-top: 26px;
+    color: #009688;
+    font-size: 9px;}
