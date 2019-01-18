@@ -7,22 +7,44 @@
     display: inline;
 }
 .hz-descr {
-    padding: 7px; 
     border-top: 1px solid #00ff89; 
-    min-width: 222px; 
+    min-width: 277px; 
     border-bottom: 1px solid #00ff89;
-    width: 18%; 
-    margin-top: 5px; margin-bottom: 14px;
+    margin-top: 17px; margin-bottom: 14px;
+    position: absolute;
+    width: 328px;
+    margin-left: -29px;
+    background: #d7f7e8;
+    font-size: 15px;
+    color: #1ba163;
+    line-height: 24px;
+    padding: 18px 65px;
 }
 .hz-title {
     display: inline; 
     position: absolute;
-    margin-top: 4px; 
+    margin-top: -3px; 
     margin-left: 12px;
 }
 span.version {
     float: right;
-    margin-top: 26px;
+    margin-top: 22px;
     color: #009688;
-    font-size: 9px;
+    font-size: 11px;
+}
+.inputSelBut {
+    width: 146px;
+    height: 28px;
+    background: rgba(0, 255, 137, 0.7);
+    font-size: 18px;
+}
+textarea#searchContent {
+    border-color: #19ba6f;
+    margin-bottom: 13px;
+    max-height: 150px;
+    min-width: 290px;
+    font-size: 17px;
+}
+.searchOption {
+    margin-top: 98px;
 }

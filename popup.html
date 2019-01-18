@@ -7,22 +7,22 @@
 		<div class="hz-header">
 			<div class="hz-logo">
 				<img src="images/icon_32.png" alt="Hz Extention" class="logo-icon">
-				<h2 class="hz-title">Quick search light</h2><span class="version">(V-1.0.0)</span>
+				<h1 class="hz-title">Quick search light</h1><span class="version">(V-1.0.0)</span>
 			</div>
 		</div>
 		<div class="hz-descr">
-			Easily find your things on Google, Youtube,Bing, yahoo, any other engine
+			Save your time to search.
 		</div>
 		<div class="searchOption">
-			<input type="text">
-			<select name="search">
-				<option value="google">google</option>
+			<textarea id="searchContent" maxlength="130" rows="2" cols="30" autofocus="true" placeholder="Type and hit search button"></textarea>
+			<select name="search" class="inputSelBut">
+				<option value="Google">Google</option>
 				<option value="youtube">YouTube</option>
-				<option value="Bing">Bing</option>
-				<option value="Ask">Ask</option>
-				<option value="Ask">Baidu</option>
+				<option value="bing">Bing</option>
+				<option value="ask">Ask</option>
+				<option value="baidu">Baidu</option>
 			</select>
-			<button id="checkBtn">Search</button>
+			<button id="checkBtn" class="inputSelBut">Search</button>
 		</div>
       <script src="popup.js"></script>
     </body>
