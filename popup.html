@@ -6,23 +6,26 @@
     <body class="popup-body">
 		<div class="hz-header">
 			<div class="hz-logo">
-				<img src="images/icon_32.png" alt="Hz Extention" class="logo-icon">
+				<img src="images/icon_tab_32.png" alt="Hz Extention" class="logo-icon">
 				<h1 class="hz-title">Quick search light</h1><span class="version">(V-1.0.0)</span>
 			</div>
 		</div>
 		<div class="hz-descr">
-			Save your time to search.
+			Save your time to search. <img class="rate" src="images/rate_45.png" alt="">
 		</div>
 		<div class="searchOption">
-			<textarea id="searchContent" maxlength="130" rows="2" cols="30" autofocus="true" placeholder="Type and hit search button"></textarea>
-			<select name="search" class="inputSelBut">
-				<option value="Google">Google</option>
+			<textarea id="searchContent" maxlength="130" rows="2" cols="30" autofocus="true" placeholder="Type and hit enter/search button"></textarea>
+			<span ><img id="serLogo" src="images/serLogo/gl_30.png" alt=""></span>
+			<div class="optionBtn">
+			<select name="search" id="selOpt" class="inputSelBut">
+				<option value="google">Google</option>
 				<option value="youtube">YouTube</option>
 				<option value="bing">Bing</option>
 				<option value="ask">Ask</option>
 				<option value="baidu">Baidu</option>
 			</select>
 			<button id="checkBtn" class="inputSelBut">Search</button>
+			</div>
 		</div>
       <script src="popup.js"></script>
     </body>
