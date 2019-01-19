@@ -1,3 +1,11 @@
+chrome.storage.sync.set({QdefLink: '0'}, function() {
+    console.log('value set');
+});
+
+chrome.storage.sync.get(['QdefLink'], function(result) {
+    document.getElementById("selOpt").selectedIndex = result.QdefLink;
+
+});
 let checkBtn = document.getElementById('checkBtn');
 checkBtn.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
