@@ -29,6 +29,11 @@ checkBtn.onclick = function(element) {
             let Asklink = Ask + con
             window.open(Asklink);
         }
+        if(opt == "stk"){
+            let stake = "https://stackoverflow.com/search?q="
+            let stkLink = stake + con
+            window.open(stkLink);
+        }
     });
 }
 let logoToSearch = document.getElementById('serLogo');
@@ -49,6 +54,9 @@ sel.addEventListener('change',(p)=>{
     }
     if (opt == "baidu"){
         document.getElementById("serLogo").src ="images/serLogo/baidu_30.png"
+    }
+    if (opt == "stk"){
+        document.getElementById("serLogo").src ="images/serLogo/stk_30.png"
     }
 
 })

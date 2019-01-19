@@ -24,6 +24,12 @@ chrome.contextMenus.create({
 	contexts:["selection"],
 });
 chrome.contextMenus.create({
+	title: "Stack overflow",
+	id: "hzByHoverStk",
+	parentId: "hzByHover",
+	contexts:["selection"],
+});
+chrome.contextMenus.create({
 	title: "Baidu",
 	id: "hzByHoverBaidu",
 	parentId: "hzByHover",
@@ -61,6 +67,11 @@ chrome.contextMenus.onClicked.addListener((clickData)=>{
 				let Ask = "https://www.search.ask.com/web?q="
 				let Asklink = Ask + clickData.selectionText
 				window.open(Asklink);
+			}
+			if (clickData.menuItemId == "hzByHoverStk" && clickData.selectionText) {
+				let stk = "https://stackoverflow.com/search?q="
+				let stklink = stk + clickData.selectionText
+				window.open(stklink);
 			}
 
 })
