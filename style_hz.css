@@ -1,31 +1,50 @@
 .popup-body {min-width: 237px;padding: 21px;background-image: linear-gradient(0deg, #9e9e9e40, #70ccc317);border: 2px dotted #bd4a4a;}
 .hz-logo img {display: inline;}
-.hz-descr {font-family: cursive;min-width: 277px;margin-top: 17px;margin-bottom: 14px;
-    position: absolute;width: 328px;margin-left: -31px;background: #367fb9;font-size: 17px;color: black;line-height: 24px;padding: 18px 41px;}
+.hz-descr {font-family: cursive;min-width: 277px;margin-top: 9px;margin-bottom: 14px;height: 35px;
+    position: absolute;width: 328px;margin-left: -31px;background: #367fb9;font-size: 17px;color: white;line-height: 32px;padding: 18px 32px;}
 .hz-title {display: inline;position: absolute;margin-top: 2px;margin-left: 12px;color: #1d1e1f;font-family: cursive;}
 span.version {float: right;margin-top: 19px;color: #4d9c95;font-size: 9px;font-family: cursive;}
 .inputSelBut {width: 127px;height: 28px;background: rgb(87, 203, 255);font-size: 15px;border: 1px solid #607D8B;}
 textarea#searchContent {border-color: #19ba6f;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 17px;}
 .searchOption {margin-top: 98px;}
 .rate {
-    width: 29px;
+    width: 24px;
     position: absolute;
-    margin-left: 58px;
-    margin-top: -4px;
+    margin-left: 78px;
+    margin-top: 5px;
     cursor: pointer;
 }
 #serLogo {width: 27px;position: absolute;}
 .optionBtn {margin-left: 37px;}
 img.gear {
-    width: 25px;
+    width: 23px;
     position: absolute;
-    margin-left: 16px;
+    margin-left: 30px;
     cursor: pointer;
+    margin-top: 7px;
 }
-.hz-descr img:hover{
+.hz-descr .gear:hover{
         transform: rotate(41deg);
         transition-duration: .5s;
 }
 .hz-descr img{
     transition: all 0.5s ease-in-out;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .hz-descr .rate:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
