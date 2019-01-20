@@ -1,12 +1,31 @@
 .popup-body {min-width: 237px;padding: 21px;background-image: linear-gradient(0deg, #9e9e9e40, #70ccc317);border: 2px dotted #bd4a4a;}
 .hz-logo img {display: inline;}
 .hz-descr {font-family: cursive;min-width: 277px;margin-top: 17px;margin-bottom: 14px;
-    position: absolute;width: 328px;margin-left: -31px;background: #aad9ff;font-size: 17px;color: black;line-height: 24px;padding: 18px 65px;}
+    position: absolute;width: 328px;margin-left: -31px;background: #367fb9;font-size: 17px;color: black;line-height: 24px;padding: 18px 41px;}
 .hz-title {display: inline;position: absolute;margin-top: 2px;margin-left: 12px;color: #1d1e1f;font-family: cursive;}
-span.version {float: right;margin-top: 22px;color: #4d9c95;font-size: 13px;font-family: cursive;}
+span.version {float: right;margin-top: 19px;color: #4d9c95;font-size: 9px;font-family: cursive;}
 .inputSelBut {width: 127px;height: 28px;background: rgb(87, 203, 255);font-size: 15px;border: 1px solid #607D8B;}
 textarea#searchContent {border-color: #19ba6f;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 17px;}
 .searchOption {margin-top: 98px;}
-.rate {width: 27px;position: absolute;margin-left: 39px;}
+.rate {
+    width: 29px;
+    position: absolute;
+    margin-left: 58px;
+    margin-top: -4px;
+    cursor: pointer;
+}
 #serLogo {width: 27px;position: absolute;}
 .optionBtn {margin-left: 37px;}
+img.gear {
+    width: 25px;
+    position: absolute;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.hz-descr img:hover{
+        transform: rotate(41deg);
+        transition-duration: .5s;
+}
+.hz-descr img{
+    transition: all 0.5s ease-in-out;
+}
