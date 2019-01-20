@@ -11,9 +11,25 @@
 			</div>
 		</div>
 		<div class="hz-descr">
-			Save your time to search. <img title="settings" class="gear" src="images/gear.png" alt=""><img title="Rate Me" class="rate" src="images/rate_45.png" alt="">
+			Save your time to search. <img title="settings" id="gear" class="gear" src="images/gear.png" alt=""><img title="Rate Me" class="rate" src="images/rate_45.png" alt="">
 		</div>
-		<div class="searchOption">
+		<div id="tog" class="showHide">
+				<div class="optionBtn">
+				<p>Set as Default search </p>	
+				<form>
+						<select name="search" id="setOpt">
+								<option value="0">Google</option>
+								<option value="1">YouTube</option>
+								<option value="2">StackOverflow</option>
+								<option value="3">Bing</option>
+								<option value="4">Ask</option>
+								<option value="5">Baidu</option>
+						</select>
+						<button id="setBtn" type="submit" >Save</button>
+				</form>
+						</div>
+		</div>
+		<div id="searchOption" class="searchOption">
 			<textarea id="searchContent" maxlength="130" rows="2" cols="30" autofocus="true" placeholder="Type and hit enter/search button"></textarea>
 		<div><span><img id="serLogo" src="images/serLogo/gl_30.png" alt=""></span>
 			<div class="optionBtn">

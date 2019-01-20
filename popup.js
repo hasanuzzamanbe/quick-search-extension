@@ -1,11 +1,9 @@
-chrome.storage.sync.set({QdefLink: '0'}, function() {
-    console.log('value set');
-});
 
 chrome.storage.sync.get(['QdefLink'], function(result) {
     document.getElementById("selOpt").selectedIndex = result.QdefLink;
-
+    document.getElementById("setOpt").selectedIndex = result.QdefLink;
 });
+
 let checkBtn = document.getElementById('checkBtn');
 checkBtn.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -46,28 +44,31 @@ checkBtn.onclick = function(element) {
 }
 let logoToSearch = document.getElementById('serLogo');
 var sel = document.getElementById("selOpt");
-sel.addEventListener('change',(p)=>{
-    var opt = sel.options[sel.selectedIndex].value;
-    if(opt == "google"){
-        document.getElementById("serLogo").src ="images/serLogo/gl_30.png"
-    }
-    if (opt == "bing"){
-        document.getElementById("serLogo").src ="images/serLogo/bing_30.png"
-    }
-    if (opt == "youtube"){
-        document.getElementById("serLogo").src ="images/serLogo/yt_30.png"
-    }
-    if (opt == "ask"){
-        document.getElementById("serLogo").src ="images/serLogo/ask_30.png"
-    }
-    if (opt == "baidu"){
-        document.getElementById("serLogo").src ="images/serLogo/baidu_30.png"
-    }
-    if (opt == "stk"){
-        document.getElementById("serLogo").src ="images/serLogo/stk_30.png"
-    }
+var set = document.getElementById("setOpt");
+sel.addEventListener('change',srcIcon)
+set.addEventListener('change',srcIcon)
+function srcIcon(){
+        var opt = sel.options[sel.selectedIndex].value;
+        if(opt == "google"){
+            document.getElementById("serLogo").src ="images/serLogo/gl_30.png"
+        }
+        if (opt == "bing"){
+            document.getElementById("serLogo").src ="images/serLogo/bing_30.png"
+        }
+        if (opt == "youtube"){
+            document.getElementById("serLogo").src ="images/serLogo/yt_30.png"
+        }
+        if (opt == "ask"){
+            document.getElementById("serLogo").src ="images/serLogo/ask_30.png"
+        }
+        if (opt == "baidu"){
+            document.getElementById("serLogo").src ="images/serLogo/baidu_30.png"
+        }
+        if (opt == "stk"){
+            document.getElementById("serLogo").src ="images/serLogo/stk_30.png"
+        }
 
-})
+}
 var contentTo = document.getElementById("searchContent")
 contentTo.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
@@ -80,3 +81,34 @@ selOpt.addEventListener("keydown", function (e) {
         document.getElementById('checkBtn').click()
     }
 });
+var set = document.getElementById('gear')
+set.addEventListener("click", function(e){
+    toggle();
+})
+var saveSet = document.getElementById("setBtn")
+saveSet.addEventListener("click", function(e){
+    srcIcon()
+    var set = document.getElementById("setOpt");
+    var QdefLinkVal = set.options[set.selectedIndex].value;
+    chrome.storage.sync.set({QdefLink: QdefLinkVal}, function() {
+        console.log('value set');
+    });
+    var options = {
+        type:"basic",
+        title:"Settings saved",
+        message:"Thanks for using Quick search",
+        iconUrl:"images/icon_32.png"
+    }
+    chrome.notifications.create(options, callback);
+    function callback(){
+        console.log('done')
+    }
+    
+})
+
+function toggle() {
+    var element = document.getElementById("tog");
+    element.classList.toggle("showHide");
+}
+
+

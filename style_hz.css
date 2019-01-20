@@ -6,7 +6,7 @@
 span.version {float: right;margin-top: 19px;color: #4d9c95;font-size: 9px;font-family: cursive;}
 .inputSelBut {width: 127px;height: 28px;background: rgb(87, 203, 255);font-size: 15px;border: 1px solid #607D8B;}
 textarea#searchContent {border-color: #19ba6f;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 17px;}
-.searchOption {margin-top: 98px;}
+.searchOption {margin-top: 100px;}
 .rate {
     width: 24px;
     position: absolute;
@@ -48,3 +48,25 @@ img.gear {
   .hz-descr .rate:hover{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
+#tog {
+  margin-top: 97px;
+  background: #19ba6f;
+  padding: 11px;
+  min-width: 277px;
+  margin-bottom: -82px;
+}
+#tog p {
+  font-size: 17px;
+}
+button#setBtn {
+  background: #57cbff;
+  height: 27px;
+}
+select#setOpt {
+  height: 25px;
+}
+.showHide {
+  display:none;
+}
+
+select#setOpt option[value="1"]   { background-image:url(images/icon_32.png);}
