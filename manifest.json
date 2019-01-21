@@ -1,6 +1,6 @@
  {
     "name": "Quick search light",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Save time to search from all Engine.",
     "permissions": ["activeTab", "storage", "webNavigation", "contextMenus", "tabs", "notifications", "<all_urls>"],
     "background": {
@@ -13,7 +13,7 @@
          "default": "Ctrl+Shift+5"
 
        },
-       "description": "Toggle feature foo",
+       "description": "quick search light",
        "global": true
      }
    },
