@@ -10,8 +10,11 @@ chrome.commands.onCommand.addListener((t)=> {
 
     }, function (selection) {
         chrome.storage.sync.get(['QdefCmdLink'], function(result) {
-            let link = result.QdefCmdLink+ selection;
-            window.open(link);
+            if(result.QdefCmdLink){
+                let link = result.QdefCmdLink+ selection;
+                window.open(link);
+            }
+            
         });
 
     })

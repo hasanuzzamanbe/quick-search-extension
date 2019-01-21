@@ -1,9 +1,14 @@
 chrome.storage.sync.get(['QdefLink'], function(result) {
-    document.getElementById("selOpt").selectedIndex = result.QdefLink;
-    document.getElementById("setOpt").selectedIndex = result.QdefLink;
+    if(result.QdefLink){
+        document.getElementById("selOpt").selectedIndex = result.QdefLink;
+        document.getElementById("setOpt").selectedIndex = result.QdefLink; 
+    }
+   
 });
 chrome.storage.sync.get(['QdefSrc'], function(result) {
-    document.getElementById("serLogo").src =`images/serLogo/${result.QdefSrc}`
+    if(result.QdefSrc){
+        document.getElementById("serLogo").src =`images/serLogo/${result.QdefSrc}`
+    }
 });
 let checkBtn = document.getElementById('checkBtn');
 checkBtn.onclick = function(element) {

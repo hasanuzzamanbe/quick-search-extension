@@ -5,7 +5,7 @@
 .hz-title {display: inline;position: absolute;margin-top: 2px;margin-left: 12px;color: #1d1e1f;font-family: cursive;}
 span.version {float: right;margin-top: 19px;color: #4d9c95;font-size: 11px;font-family: cursive;}
 .inputSelBut {width: 127px;height: 28px;background: rgb(87, 203, 255);font-size: 15px;border: 1px solid #607D8B;}
-textarea#searchContent {border-color: #19ba6f;    background: #63a78724;border-radius: 4px;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 15px;}
+textarea#searchContent {border-color: #19ba6f;    background: #63a78724;border-radius: 4px;margin-bottom: 13px;max-height: 150px;min-width: 293px;font-size: 15px;}
 .searchOption {margin-top: 100px;}
 .rate {width: 24px;position: absolute;margin-left: 78px;margin-top: 5px;cursor: pointer;}
 #serLogo {width: 27px;position: absolute;}
@@ -26,4 +26,4 @@ button#setBtn {background: #57cbff;height: 21px;}
 .showHide {display:none;}
 form#cmdSearch {margin-left: 38px;}
 select#setOpt {cursor: pointer;}
-button.hideBtn {margin-left: 42px;cursor:pointer}
+button.hideBtn {margin-left: 24px;cursor:pointer}
