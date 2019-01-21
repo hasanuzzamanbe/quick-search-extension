@@ -94,8 +94,8 @@ var set = document.getElementById('gear')
 set.addEventListener("click", function(e){
     toggle();
 })
-var saveSet = document.getElementById("setBtn")
-saveSet.addEventListener("click", function(e){
+var saveSet = document.getElementById("setOpt")
+saveSet.addEventListener("change", function(e){
     srcIcon()
     var set = document.getElementById("setOpt");
     var QdefLinkVal = set.options[set.selectedIndex].value;
@@ -133,5 +133,11 @@ function toggle() {
     var element = document.getElementById("tog");
     element.classList.toggle("showHide");
 }
+var cmdLinked = document.getElementById("cmdlink");
+
+cmdLinked.addEventListener('change',function(){
+    var val = cmdLinked.options[cmdLinked.selectedIndex].value;
+    chrome.storage.sync.set({QdefCmdLink: val}, function() {});
+})
 
 

@@ -21,7 +21,9 @@ img.gear {width: 23px;position: absolute;margin-left: 30px;cursor: pointer;margi
 }
 .hz-descr .rate:hover{animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;}
 #tog {border-radius: 12px;margin-top: 97px;background: #63a78724;padding: 11px;min-width: 277px;margin-bottom: -82px;box-shadow: 1px 1px 3px #291717;}
-#tog p {font-size: 17px;}
-button#setBtn {background: #57cbff;height: 27px;}
-select#setOpt {height: 25px;}
+#tog p {font-size: 17px;    line-height: 0px;}
+button#setBtn {background: #57cbff;height: 21px;}
 .showHide {display:none;}
+form#cmdSearch {margin-left: 38px;}
+select#setOpt {cursor: pointer;}
+button.hideBtn {margin-left: 42px;cursor:pointer}

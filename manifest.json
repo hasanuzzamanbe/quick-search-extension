@@ -2,11 +2,21 @@
     "name": "Quick search light",
     "version": "1.0.0",
     "description": "Save time to search from all Engine.",
-    "permissions": ["activeTab", "storage", "webNavigation", "contextMenus", "tabs", "notifications" ],
+    "permissions": ["activeTab", "storage", "webNavigation", "contextMenus", "tabs", "notifications", "<all_urls>"],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
+   "commands": {
+     "toggle-feature-foo": {
+       "suggested_key": {
+         "default": "Ctrl+Shift+5"
+
+       },
+       "description": "Toggle feature foo",
+       "global": true
+     }
+   },
     "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {

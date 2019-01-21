@@ -26,9 +26,22 @@
 								<option value="5">Ask</option>
 								<option value="6">Baidu</option>
 						</select>
-						<button id="setBtn" type="submit" >Save</button>
 				</form>
 						</div>
+			<div><p>Press Ctrl+shift+5 will search on:</p>
+				<form  id="cmdSearch">
+					<select id="cmdlink">
+						<option value="http://google.com/search?q=">Google</option>
+						<option value="https://www.youtube.com/results?search_query=">YouTube</option>
+						<option value="https://stackoverflow.com/search?q=">StackOverflow</option>
+						<option value="https://en.wikipedia.org/wiki/Special:Search?search=">Wikipedia</option>
+						<option value="https://www.bing.com/search?q=">Bing</option>
+						<option value="https://www.search.ask.com/web?q=">Ask</option>
+						<option value="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=">Baidu</option>
+					</select>
+					<button type="submit" class="hideBtn">Done change</button>
+				</form></div>
+
 		</div>
 		<div id="searchOption" class="searchOption">
 			<textarea id="searchContent" maxlength="130" rows="2" cols="30" autofocus="true" placeholder="Type and hit enter/search button"></textarea>
