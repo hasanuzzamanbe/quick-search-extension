@@ -1,9 +1,10 @@
-
 chrome.storage.sync.get(['QdefLink'], function(result) {
     document.getElementById("selOpt").selectedIndex = result.QdefLink;
     document.getElementById("setOpt").selectedIndex = result.QdefLink;
 });
-
+chrome.storage.sync.get(['QdefSrc'], function(result) {
+    document.getElementById("serLogo").src =`images/serLogo/${result.QdefSrc}`
+});
 let checkBtn = document.getElementById('checkBtn');
 checkBtn.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -40,6 +41,11 @@ checkBtn.onclick = function(element) {
             let stkLink = stake + con
             window.open(stkLink);
         }
+        if(opt == "wiki"){
+            let wiki = "https://en.wikipedia.org/wiki/Special:Search?search="
+            let wikiLink = wiki + con
+            window.open(wikiLink);
+        }
     });
 }
 let logoToSearch = document.getElementById('serLogo');
@@ -67,6 +73,9 @@ function srcIcon(){
         if (opt == "stk"){
             document.getElementById("serLogo").src ="images/serLogo/stk_30.png"
         }
+    if (opt == "wiki"){
+        document.getElementById("serLogo").src ="images/serLogo/wiki_30.png"
+    }
 
 }
 var contentTo = document.getElementById("searchContent")
@@ -90,22 +99,36 @@ saveSet.addEventListener("click", function(e){
     srcIcon()
     var set = document.getElementById("setOpt");
     var QdefLinkVal = set.options[set.selectedIndex].value;
-    chrome.storage.sync.set({QdefLink: QdefLinkVal}, function() {
-        console.log('value set');
-    });
+    chrome.storage.sync.set({QdefLink: QdefLinkVal}, function() {});
+    if(QdefLinkVal== '0'){
+        chrome.storage.sync.set({QdefSrc: 'gl_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '1'){
+        chrome.storage.sync.set({QdefSrc: 'yt_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '2'){
+        chrome.storage.sync.set({QdefSrc: 'stk_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '3'){
+        chrome.storage.sync.set({QdefSrc: 'wiki_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '4'){
+        chrome.storage.sync.set({QdefSrc: 'bing_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '5'){
+        chrome.storage.sync.set({QdefSrc: 'ask_30.png'}, function() {});
+    }
+    if(QdefLinkVal== '6'){
+        chrome.storage.sync.set({QdefSrc: 'baidu_30.png'}, function() {});
+    }
     var options = {
         type:"basic",
         title:"Settings saved",
         message:"Thanks for using Quick search",
         iconUrl:"images/icon_32.png"
     }
-    chrome.notifications.create(options, callback);
-    function callback(){
-        console.log('done')
-    }
-    
+    chrome.notifications.create(options, function(){});
 })
-
 function toggle() {
     var element = document.getElementById("tog");
     element.classList.toggle("showHide");

@@ -5,68 +5,23 @@
 .hz-title {display: inline;position: absolute;margin-top: 2px;margin-left: 12px;color: #1d1e1f;font-family: cursive;}
 span.version {float: right;margin-top: 19px;color: #4d9c95;font-size: 9px;font-family: cursive;}
 .inputSelBut {width: 127px;height: 28px;background: rgb(87, 203, 255);font-size: 15px;border: 1px solid #607D8B;}
-textarea#searchContent {border-color: #19ba6f;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 17px;}
+textarea#searchContent {border-color: #19ba6f;    background: #63a78724;border-radius: 4px;margin-bottom: 13px;max-height: 150px;min-width: 290px;font-size: 15px;}
 .searchOption {margin-top: 100px;}
-.rate {
-    width: 24px;
-    position: absolute;
-    margin-left: 78px;
-    margin-top: 5px;
-    cursor: pointer;
-}
+.rate {width: 24px;position: absolute;margin-left: 78px;margin-top: 5px;cursor: pointer;}
 #serLogo {width: 27px;position: absolute;}
 .optionBtn {margin-left: 37px;}
-img.gear {
-    width: 23px;
-    position: absolute;
-    margin-left: 30px;
-    cursor: pointer;
-    margin-top: 7px;
-}
-.hz-descr .gear:hover{
-        transform: rotate(41deg);
-        transition-duration: .5s;
-}
-.hz-descr img{
-    transition: all 0.5s ease-in-out;
-}
+img.gear {width: 23px;position: absolute;margin-left: 30px;cursor: pointer;margin-top: 7px;}
+.hz-descr .gear:hover{transform: rotate(41deg);transition-duration: .5s;}
+.hz-descr img{transition: all 0.5s ease-in-out;}
 @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
-
-  .hz-descr .rate:hover{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
+    20%, 80% {transform: translate3d(2px, 0, 0);}
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+    40%, 60% {transform: translate3d(4px, 0, 0);}
 }
-#tog {
-  margin-top: 97px;
-  background: #19ba6f;
-  padding: 11px;
-  min-width: 277px;
-  margin-bottom: -82px;
-}
-#tog p {
-  font-size: 17px;
-}
-button#setBtn {
-  background: #57cbff;
-  height: 27px;
-}
-select#setOpt {
-  height: 25px;
-}
-.showHide {
-  display:none;
-}
-
-select#setOpt option[value="1"]   { background-image:url(images/icon_32.png);}
+.hz-descr .rate:hover{animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;}
+#tog {border-radius: 12px;margin-top: 97px;background: #63a78724;padding: 11px;min-width: 277px;margin-bottom: -82px;box-shadow: 1px 1px 3px #291717;}
+#tog p {font-size: 17px;}
+button#setBtn {background: #57cbff;height: 27px;}
+select#setOpt {height: 25px;}
+.showHide {display:none;}

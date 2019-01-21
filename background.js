@@ -18,14 +18,20 @@ chrome.contextMenus.create({
 	contexts:["selection"],
 });
 chrome.contextMenus.create({
-	title: "Bing",
-	id: "hzByHoverBing",
+	title: "Stack overflow",
+	id: "hzByHoverStk",
 	parentId: "hzByHover",
 	contexts:["selection"],
 });
 chrome.contextMenus.create({
-	title: "Stack overflow",
-	id: "hzByHoverStk",
+	title: "Wikipedia",
+	id: "hzByHoverWiki",
+	parentId: "hzByHover",
+	contexts:["selection"],
+});
+chrome.contextMenus.create({
+	title: "Bing",
+	id: "hzByHoverBing",
 	parentId: "hzByHover",
 	contexts:["selection"],
 });
@@ -72,6 +78,11 @@ chrome.contextMenus.onClicked.addListener((clickData)=>{
 				let stk = "https://stackoverflow.com/search?q="
 				let stklink = stk + clickData.selectionText
 				window.open(stklink);
+			}
+			if (clickData.menuItemId == "hzByHoverWiki" && clickData.selectionText) {
+				let wiki = "https://en.wikipedia.org/wiki/Special:Search?search="
+				let wikiLink = wiki + clickData.selectionText
+				window.open(wikiLink);
 			}
 
 })
