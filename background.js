@@ -20,54 +20,55 @@ chrome.commands.onCommand.addListener((t)=> {
     })
 
 });
+chrome.contextMenus.removeAll(function() {
+    chrome.contextMenus.create({
+        title: "Quick search on",
+        id: "hzByHover",
+        contexts: ["selection"]
 
-chrome.contextMenus.create({
-    title: "Quick search on",
-    id: "hzByHover",
-    contexts: ["selection"]
-
-});
-chrome.contextMenus.create({
-    "title": "Google",
-    id: "hzByHoverGoogle",
-    parentId: "hzByHover",
-    contexts: ["selection"]
-});
-chrome.contextMenus.create({
-    title: "YouTube",
-    id: "hzByHoverYt",
-    parentId: "hzByHover",
-    contexts: ["selection"],
-});
-chrome.contextMenus.create({
-    title: "Stack overflow",
-    id: "hzByHoverStk",
-    parentId: "hzByHover",
-    contexts: ["selection"],
-});
-chrome.contextMenus.create({
-    title: "Wikipedia",
-    id: "hzByHoverWiki",
-    parentId: "hzByHover",
-    contexts: ["selection"],
-});
-chrome.contextMenus.create({
-    title: "Bing",
-    id: "hzByHoverBing",
-    parentId: "hzByHover",
-    contexts: ["selection"],
-});
-chrome.contextMenus.create({
-    title: "Baidu",
-    id: "hzByHoverBaidu",
-    parentId: "hzByHover",
-    contexts: ["selection"],
-});
-chrome.contextMenus.create({
-    title: "Ask",
-    id: "hzByHoverAsk",
-    parentId: "hzByHover",
-    contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        "title": "Google",
+        id: "hzByHoverGoogle",
+        parentId: "hzByHover",
+        contexts: ["selection"]
+    });
+    chrome.contextMenus.create({
+        title: "YouTube",
+        id: "hzByHoverYt",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        title: "Stack overflow",
+        id: "hzByHoverStk",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        title: "Wikipedia",
+        id: "hzByHoverWiki",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        title: "Bing",
+        id: "hzByHoverBing",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        title: "Baidu",
+        id: "hzByHoverBaidu",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    });
+    chrome.contextMenus.create({
+        title: "Ask",
+        id: "hzByHoverAsk",
+        parentId: "hzByHover",
+        contexts: ["selection"],
+    })
 });
 chrome.contextMenus.onClicked.addListener((clickData) => {
     if (clickData.menuItemId == "hzByHoverGoogle" && clickData.selectionText) {

@@ -2,8 +2,12 @@
     "name": "Quick search lite",
     "version": "0.0.1",
     "description": "Save time to search from all Engine.",
-    "permissions": ["activeTab", "storage", "webNavigation", "contextMenus", "tabs", "notifications", "<all_urls>"],
-    "background": {
+    "permissions": ["activeTab", "storage", "webNavigation", "contextMenus", "tabs", "notifications", "<all_urls>", "*://*/*"],
+   "optional_permissions": [
+     "topSites",
+     "http://www.developer.chrome.com/*"
+   ],
+   "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
@@ -33,5 +37,6 @@
         "128": "images/icon_128.png"
     },
     "options_page": "options.html",
-    "manifest_version": 2
+    "manifest_version": 2,
+   "short_name": "QSL"
   }
