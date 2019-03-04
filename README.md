@@ -1,4 +1,4 @@
-# quick-search-extention
+# quick-search-extension
 A quick search to your desire site.
 This was My Second project for Google chrome Browser Extension.
 It's now available on google chrome Web store.
