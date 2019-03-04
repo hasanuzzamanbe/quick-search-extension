@@ -14,4 +14,13 @@ This Extension Can Do:
        Mac: (Cmd+Shift+5)
   4. Can set default settings.
   
-  Hope you enjoy this project.
+Hope you all enjoy my project.
+If you have any suggestion I really appreciate you.
+Please, Just Let me know about it.
+You can mail me at:
+ hasanuzzamanbe@gmail.com
+
+or 
+
+Facebook:
+ https://www.facebook.com/shamim.reza.1029
