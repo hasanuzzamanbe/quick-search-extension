@@ -12,6 +12,12 @@ For this Extension I use JavaScript and chrome API.
        Mac: (Cmd+Shift+5)
   4. Can set default settings.
   
+ ## My another work on Webstore:
+  Webstore Link:
+  <a href="https://chrome.google.com/webstore/detail/social-launcher/ioijhmpjoplcmckgaiggcoockjijmcim">Social Launcher</a><br>
+  Website Link:
+  <a href="https://hasanuzzamanbe.github.io/social-launcher-extension/">Social Launcher</a><br>
+  
 ## Thanks to all:
 Hope you all enjoy my project.
 If you have any suggestion I really appreciate you.
