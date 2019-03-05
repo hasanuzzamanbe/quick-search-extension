@@ -1,8 +1,7 @@
 # quick-search-extension
 A quick search to your desire site.
 This is a powerfull Extension for Google chrome Browser.
-## It's now available on google chrome Web store.
-https://chrome.google.com/webstore/detail/quick-search-lite/boikedohmpklkpcmpkickjfnmalfbimf
+## It's now available on google <a href="https://chrome.google.com/webstore/detail/quick-search-lite/boikedohmpklkpcmpkickjfnmalfbimf">chrome Web store.</a>
 
 For this Extension I use JavaScript and chrome API.
 ## Features it has:
@@ -21,9 +20,10 @@ Github Repository:
 https://github.com/hasanuzzamanbe/quick-search-extension
 
 You can mail me at:
- hasanuzzamanbe@gmail.com
+ <a href="mailto:'hasanuzzamanbe@gmail.com
+'">hasanuzzamanbe@gmail.com</a>
 
 or 
 
 Facebook:
- https://www.facebook.com/shamim.reza.1029
+<a href="https://www.facebook.com/shamim.reza.1029">Facebook Profile Link</a>
