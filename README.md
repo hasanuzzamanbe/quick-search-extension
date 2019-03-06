@@ -11,13 +11,23 @@ For this Extension I use JavaScript and chrome API.
        windows: (Ctrl+Shift+5)
        Mac: (Cmd+Shift+5)
   4. Can set default settings.
-  
+
+## Check The Video On Youtube:<br>
+<a href="https://www.youtube.com/watch?v=4g1z2jYNnjU" target="_blank" ><img style="border: 3px solid rgb(158, 179, 177);
+    box-shadow: black 3px 3px 7px;
+    border-radius: 15px;
+    max-width: 480px;" src="vdo.png"></a>
+
+
  ## My another work on Webstore:
   Webstore Link:
   <a href="https://chrome.google.com/webstore/detail/social-launcher/ioijhmpjoplcmckgaiggcoockjijmcim">Social Launcher</a><br>
   Website Link:
   <a href="https://hasanuzzamanbe.github.io/social-launcher-extension/">Social Launcher</a><br>
   
+  
+
+
 ## Thanks to all:
 Hope you all enjoy my project.
 If you have any suggestion I really appreciate you.
@@ -25,11 +35,11 @@ Please, Just Let me know about it.
 Github Repository:
 https://github.com/hasanuzzamanbe/quick-search-extension
 
-You can mail me at:
- <a href="mailto:'hasanuzzamanbe@gmail.com
-'">hasanuzzamanbe@gmail.com</a>
+## You can mail me at:
+ <a href="mailto:'hasanuzzamanbe@gmail.com'">hasanuzzamanbe@gmail.com</a>
 
 or 
+## Knock me on:<br>
 
-Facebook:
-<a href="https://www.facebook.com/shamim.reza.1029">Facebook Profile Link</a>
+<a style="border: 1px solid #292828;padding: 2px;border-radius: 7px;background: #03A9F4;color: white;" href="https://www.facebook.com/shamim.reza.1029" target="_blank" >Facebook</a>
+<a style="border: 1px solid #292828;padding: 2px;border-radius: 7px;background: #00BCD4;color: white;" href="https://www.linkedin.com/in/hasanuzzaman-shamim-307680115/" target="_blank" >LinkedIn</a>
