@@ -3,7 +3,7 @@ A quick search to your desire site.
 This is a powerfull Extension for Google chrome Browser.
 ## It's now available on google <a href="https://chrome.google.com/webstore/detail/quick-search-lite/boikedohmpklkpcmpkickjfnmalfbimf">chrome Web store.</a>
 
-For this Extension I use JavaScript and chrome API.
+For this Extension I used JavaScript and chrome API.
 ## Features it has:
   1. Context menu search,
   2. Popup Search,
