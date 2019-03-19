@@ -19,6 +19,12 @@
        },
        "description": "quick search lite",
        "global": true
+     },
+     "_execute_browser_action": {
+       "suggested_key": {
+         "default": "Ctrl+Shift+F",
+         "mac": "MacCtrl+Shift+F"
+       }
      }
    },
     "browser_action": {
