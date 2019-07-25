@@ -40,6 +40,7 @@ https://github.com/hasanuzzamanbe/quick-search-extension
 
 or 
 ## Get in touch with me:<br>
+<img width="200px" style="max-width: 100%; border-radius: 102px; float: right;margin-top: -200px;" src="https://gravatar.com/avatar/d302150bad450b0857dd9a197c6ac23d?s=512">
 
 <a style="border: 1px solid #292828;padding: 2px;border-radius: 7px;box-shadow: 1px 1px 1px #330303;background: #03A9F4;color: white;" href="https://www.facebook.com/shamim0902" target="_blank" >Facebook</a>
 <a style="border: 1px solid #292828;padding: 2px;border-radius: 7px;box-shadow: 1px 1px 1px #330303;background: #00BCD4;color: white;" href="https://www.linkedin.com/in/hasanuzzaman-shamim-307680115/" target="_blank" >LinkedIn</a>
